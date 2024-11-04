@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Menüsü</title>
+    <style>
+        /* Temel stil */
+        .menu-container {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .category-buttons button {
+            margin: 5px;
+        }
+
+        .menu-item {
+            margin: 15px 0;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu-container">
+        <h1>Restoran Menüsü</h1>
+        <div class="category-buttons">
+            <button onclick="filterMenu('Hepsi')">Hepsi</button>
+            <button onclick="filterMenu('Ana Yemekler')">Ana Yemekler</button>
+            <button onclick="filterMenu('Tatlılar')">Tatlılar</button>
+            <button onclick="filterMenu('İçecekler')">İçecekler</button>
+        </div>
+        <div id="menu-items"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
